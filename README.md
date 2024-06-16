@@ -11,10 +11,11 @@
 
 4. Defina os valores **PYTHON_CRIPTO_KEY_HEX** e **PYTHON_MONGODB_KEY** nas variaveis de ambiente.
    -A chave de cripitografia deve ser de 32 Bytes
+   
    -**PYTHON_MONGODB_KEY** se refere ao endereço da sua database que o mongoDB forneceu e copie oque o mongoDB te deu e tire os <> e mude **password** para **passwordhere** aqui é um 
    exemplo de como deve ficar:
    mongodb+srv://user:passawordhere@cluster0.9k2dal2.mongodb.net/?retryWrites=true
-5. Na hora de executar ele vai pedir a senha do endereço, por isso do **passwordhere** para não espalhar sua senha.
+6. Na hora de executar ele vai pedir a senha do endereço, por isso do **passwordhere** para não espalhar sua senha.
    
 ![image](https://github.com/UserNotfoundR/CP-ChatPV/assets/128847349/523b2fb3-a059-4c82-8930-20e24a080c21)
 
