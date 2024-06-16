@@ -1,5 +1,5 @@
 # CP-ChatPV
-É um projeto de um chat privado com criptografia e total privacidade.
+É um projeto de um chat privado com criptografia e com privacidade total.
 
 # Como usar? 😅
 
