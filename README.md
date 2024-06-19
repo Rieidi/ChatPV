@@ -25,7 +25,7 @@
 Recomendo compilar para um PE antes de mandar para outras pessoas, por questão de portabilidade.
 # Avisos ⚠️
 
-O codigo tem uma função que salva a quantidade de vezes que você errou a senha se você errou 3 o codígo vai bloquar o seu uso por 10 minutos e depois vai ser liberado para mais três tentativas.
+O codigo tem uma função que salva a quantidade de vezes que você errou a senha se você errou 3 vezes, o codígo vai bloquar o seu uso por 10 minutos e depois vai ser liberado para mais três tentativas.
 
    ![image](https://github.com/UserNotfoundR/CP-ChatPV/assets/128847349/9228e637-d6a1-4473-a3ef-bfe8f436960f)
 
