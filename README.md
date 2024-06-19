@@ -10,6 +10,7 @@
 ![image](https://github.com/UserNotfoundR/CP-ChatPV/assets/128847349/fcc565fc-6bc6-439b-83c4-719165ef3e91)
 
 4. Defina os valores **PYTHON_CRIPTO_KEY_HEX** e **PYTHON_MONGODB_KEY** nas variaveis de ambiente.
+ 
    -A chave de cripitografia deve ser de 32 Bytes
    
    -**PYTHON_MONGODB_KEY** se refere ao endereço da sua database que o mongoDB forneceu e copie oque o mongoDB te deu e tire os <> e mude **password** para **passwordhere** aqui é um 
