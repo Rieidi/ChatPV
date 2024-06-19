@@ -29,3 +29,5 @@ O codigo tem uma função que salva a quantidade de vezes que você errou a senh
 
    ![image](https://github.com/UserNotfoundR/CP-ChatPV/assets/128847349/9228e637-d6a1-4473-a3ef-bfe8f436960f)
 
+Não há **compatibilidade garantida com o Linux**, bibliotecas e algumas partes do codígo deverão ser **mudadas** se você quiser criar um porte para o linux...
+
