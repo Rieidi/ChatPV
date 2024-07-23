@@ -1,33 +1,37 @@
+Aqui está o README melhorado com links das imagens:
+
 # CP-ChatPV
-É um projeto de um chat privado com criptografia e privacidade total.
 
-# Como usar? 😅
+Projeto de chat privado com criptografia e privacidade total.
 
-1. Baixe os arquivos e bibliotecas nessesarias.
-2. Crie uma database no MongoDB e configure para o IP 0.0.0.0
-3. O nome da database deve ser PV e o da coleção deve ser PV1, mas se você quiser mudar você pode mudar no codigo python.
-   
+## Como usar? 😅
+
+1. Baixe os arquivos e bibliotecas necessárias.
+2. Crie uma database no MongoDB e configure para o IP `0.0.0.0`.
+3. O nome da database deve ser `PV` e o da coleção deve ser `PV1`. Se desejar, você pode alterar esses nomes no código Python.
+
    ![image](https://github.com/UserNotfoundR/CP-ChatPV/assets/128847349/fcc565fc-6bc6-439b-83c4-719165ef3e91)
 
-4. Defina os valores **PYTHON_CRIPTO_KEY_HEX** e **PYTHON_MONGODB_KEY** nas variaveis de ambiente.
- 
-   -A chave de cripitografia deve ser de 32 Bytes
+4. Defina os valores **PYTHON_CRIPTO_KEY_HEX** e **PYTHON_MONGODB_KEY** nas variáveis de ambiente:
    
-   -**PYTHON_MONGODB_KEY** se refere ao endereço da sua database que o mongoDB forneceu e copie oque o mongoDB te deu e tire os <> e mude **password** para **passwordhere** aqui é um 
-   exemplo de como deve ficar:
-   ```mongodb+srv://user:passawordhere@cluster0.9k2dal2.mongodb.net/?retryWrites=true```
-6. Na hora de executar ele vai pedir a senha do endereço, por isso do **passwordhere** para não espalhar sua senha.
+   - A chave de criptografia deve ter 32 bytes.
+   - **PYTHON_MONGODB_KEY** se refere ao endereço da sua database fornecido pelo MongoDB. Copie o endereço fornecido, remova os `<` `>` e substitua `password` por `passwordhere`. Aqui está um exemplo:
    
+     ```mongodb+srv://user:passwordhere@cluster0.9k2dal2.mongodb.net/?retryWrites=true```
+   
+5. Ao executar o código, ele pedirá a senha do endereço. Use `passwordhere` para não expor sua senha real.
+
    ![image](https://github.com/UserNotfoundR/CP-ChatPV/assets/128847349/523b2fb3-a059-4c82-8930-20e24a080c21)
 
-6. Compartilhe a database, senha e chave com as pessoas que você quer falar privadamente.
+6. Compartilhe a database, senha e chave com as pessoas com quem você quer se comunicar privadamente.
 
-Recomendo compilar para um PE antes de mandar para outras pessoas, por questão de portabilidade.
-# Avisos ⚠️
+Recomendo compilar para um executável (PE) antes de enviar para outras pessoas, por questões de portabilidade.
 
-O codigo tem uma função que salva a quantidade de vezes que você errou a senha se você errou 3 vezes, o codígo vai bloquar o seu uso por 10 minutos e depois vai ser liberado para mais três tentativas.
+## Avisos ⚠️
+
+O código tem uma função que salva a quantidade de tentativas de senha erradas. Se você errar 3 vezes, o código bloqueará o uso por 10 minutos, após os quais você terá mais três tentativas.
 
    ![image](https://github.com/UserNotfoundR/CP-ChatPV/assets/128847349/9228e637-d6a1-4473-a3ef-bfe8f436960f)
 
-Não há **compatibilidade garantida com o Linux**, bibliotecas e algumas partes do codígo deverão ser **mudadas** se você quiser criar um porte para o linux...
+Não há **compatibilidade garantida com Linux**. Bibliotecas e algumas partes do código precisarão ser **modificadas** se você quiser criar uma versão para Linux.
 
