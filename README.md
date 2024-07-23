@@ -1,5 +1,3 @@
-Aqui está o README melhorado com links das imagens:
-
 # CP-ChatPV
 
 Projeto de chat privado com criptografia e privacidade total.
