@@ -73,4 +73,4 @@ On the first run, you will need to fill in the following fields:
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [GNU GENERAL PUBLIC LICENSE 2.0](LICENSE).
