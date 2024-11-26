@@ -45,6 +45,7 @@ ChatPv is a desktop application for sending and receiving encrypted messages usi
 On the first run, you will need to fill in the following fields:
 
 - **MongoDB URI**: Connection string to your database (without the password).
+  
    -mongodb+srv://[username:passwordhere@]host[/[defaultauthdb][?options]] 
 - **Database Name**: The name of the database you created in MongoDB.
 - **Collection Name**: The collection where messages will be stored.
