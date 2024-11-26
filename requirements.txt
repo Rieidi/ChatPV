@@ -1,0 +1,5 @@
+customtkinter==5.2.2
+plyer==2.1.0
+pycryptodome==3.21.0
+pymongo==4.10.1
+pytz==2024.1
