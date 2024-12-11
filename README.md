@@ -104,6 +104,9 @@ On the first run, you will need to fill in the following fields:
 - All messages are encrypted before being stored in the database.
 - Implements an automatic lockout after 3 incorrect password attempts.
 
+## Tips
+To safeguard your privacy and prevent your internet provider from monitoring your activities, consider using a **VPN**.
+
 ## License
 
 This project is licensed under the [GNU GENERAL PUBLIC LICENSE v3.0](LICENSE), and was created for educational purposes only. The developer assumes no responsibility for improper use or illegal activities.
