@@ -106,4 +106,4 @@ On the first run, you will need to fill in the following fields:
 
 ## License
 
-This project is licensed under the [GNU GENERAL PUBLIC LICENSE v3.0](LICENSE).
+This project is licensed under the [GNU GENERAL PUBLIC LICENSE v3.0](LICENSE), and was created for educational purposes only. The developer assumes no responsibility for improper use or illegal activities.
