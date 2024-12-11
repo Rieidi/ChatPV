@@ -18,7 +18,7 @@ ChatPv is a desktop application for sending and receiving encrypted messages usi
 - **PyCryptodome**: For message encryption and decryption.
 - **Plyer**: For system notifications.
 
-## Installation
+## Installation Windows
 
 1. Clone this repository:
    ```
@@ -40,6 +40,39 @@ ChatPv is a desktop application for sending and receiving encrypted messages usi
    python ChatPV.py
    ```
 
+## Installation Linux:
+
+1. Clone this repository:
+   ```
+   git clone https://github.com/Rieidi/ChatPV
+   cd chatPV
+   ```
+   
+2. Create Venv
+   ```
+   sudo python3 -m Venv .
+   ```
+
+3. Activate Venv
+   ```
+   source bin/activate
+   ```
+
+4. Install requirements
+   ```
+   pip install -r requirements.txt
+   sudo apt-get install python3-tk
+   ```
+
+5. Set up MongoDB:
+   - Ensure MongoDB is running.
+   - Create a database and a collection to store messages.
+
+6. Run
+   ```
+   python3 ChatPV.py
+   ```
+   
 ## Initial Setup
 
 On the first run, you will need to fill in the following fields:
