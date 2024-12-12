@@ -37,7 +37,7 @@ ChatPv is a desktop application for sending and receiving encrypted messages usi
 
 4. Run the program:
    ```
-   python ChatPV.py
+   python chatPV.py
    ```
 
 ## Installation Linux
