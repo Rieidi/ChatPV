@@ -70,7 +70,7 @@ ChatPv is a desktop application for sending and receiving encrypted messages usi
 
 6. Run
    ```
-   python3 ChatPV.py
+   python3 chatPV.py
    ```
    
 ## Initial Setup
