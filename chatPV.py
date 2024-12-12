@@ -12,8 +12,8 @@ import shutil
 import time
 import pytz
 import threading
-from plyer import notification 
-
+from plyer import notification
+import keyring
 
 class ChatApplication(ctk.CTk):
     def __init__(self):
@@ -117,6 +117,7 @@ class ChatApplication(ctk.CTk):
         threading.Thread(target=self.monitor_messages, daemon=True).start()
         self.start_message_monitoring()
 
+
     def confirm_initial_config(self):
         """Confirmação das informações iniciais e conexão com MongoDB."""
         uri = self.uri_entry.get()
@@ -126,13 +127,11 @@ class ChatApplication(ctk.CTk):
         username = self.username_entry.get()
         password = self.password_entry.get()
 
-        # Verificar se há campos vazios
         if not all([uri, db_name, collection_name, encryption_key, username, password]):
             messagebox.showerror("Erro", "Todos os campos são obrigatórios!")
             return
 
         try:
-            # Validar chave de criptografia
             encryption_key_bytes = binascii.unhexlify(encryption_key)
             if len(encryption_key_bytes) != 16:
                 raise ValueError("A chave de criptografia deve ter 16 bytes (128 bits).")
@@ -142,17 +141,22 @@ class ChatApplication(ctk.CTk):
 
         self.nome_usuario = username
         self.encryption_key = encryption_key_bytes
-
-        self.UserMSG = username  # Atribui o nome de usuário para uso em notificações
-
+        self.UserMSG = username
 
         try:
-            # Substituir senha no URI e conectar
+            # Salvar todos os valores no keyring
+            keyring.set_password("ChatPv", "MongoDB_URI", uri)
+            keyring.set_password("ChatPv", "MongoDB_Database", db_name)
+            keyring.set_password("ChatPv", "MongoDB_Collection", collection_name)
+            keyring.set_password("ChatPv", "Encryption_Key", encryption_key)
+            keyring.set_password("ChatPv", "MongoDB_Username", username)
+            keyring.set_password("ChatPv", "MongoDB_Password", password)
+
+            # Usar a senha para configurar o URI
             uri = uri.replace("passawordhere", password)
             self.client = MongoClient(uri)
             self.db = self.client[db_name]
 
-            # Verifica se a coleção existe
             if collection_name not in self.db.list_collection_names():
                 messagebox.showerror("Erro", "A coleção especificada não existe na base de dados.")
                 return
@@ -170,6 +174,10 @@ class ChatApplication(ctk.CTk):
                 messagebox.showerror("Erro de Conexão", f"Erro ao conectar ao MongoDB: {str(e)}")
         except Exception as e:
             messagebox.showerror("Erro", f"Erro inesperado: {str(e)}")
+
+    def get_config_value(self, key):
+        """Recupera valores de configuração armazenados com segurança."""
+        return keyring.get_password("ChatPv", key)
 
     def handle_wrong_password(self):
         """Gerencia tentativas erradas de senha e bloqueio."""
@@ -410,12 +418,9 @@ class ChatApplication(ctk.CTk):
         status = "desbloqueadas" if not self.bloquear_notificacoes else "bloqueadas"
         self.display_message("Sistema", f"Notificações {status}.")
 
-
-
     def display_error(self, title, message):
         """Exibe uma mensagem de erro."""
         print(f"{title}: {message}")
-
 
 if __name__ == "__main__":
     app = ChatApplication()
