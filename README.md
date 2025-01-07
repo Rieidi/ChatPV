@@ -109,4 +109,4 @@ To safeguard your privacy and prevent your internet provider from monitoring you
 
 ## License
 
-This project is licensed under the [GNU GENERAL PUBLIC LICENSE v3.0](LICENSE), and was created for educational purposes only. The developer assumes no responsibility for improper use or illegal activities.
+This project is licensed under the MIT LICENSE, and was created for educational purposes only. The developer assumes no responsibility for improper use or illegal activities.
