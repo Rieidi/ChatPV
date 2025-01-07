@@ -1,6 +1,6 @@
 # ChatPv
 
-ChatPv is a desktop application for sending and receiving encrypted messages using MongoDB as the backend. This project is developed with **CustomTkinter** for the graphical interface and implements AES encryption for secure communication. But it only works on Windows for now...
+ChatPv is a desktop application for sending and receiving encrypted messages using MongoDB as the backend. This project is developed with **CustomTkinter** for the graphical interface and implements AES encryption for secure communication. Works in windows and linux.
 
 ## Features
 
